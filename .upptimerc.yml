@@ -1,31 +1,86 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: cocreiamo
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  # To add when deployed (they answer 530 or nothing until the app or the registry runs):
+  #   - name: hello
+  #     url: https://hello.cocreiamo.com
+  #     expectedStatusCodes: [200, 404]
+  #     maxRedirects: 0
+  #   - name: id
+  #     url: https://id.cocreiamo.com/robots.txt
+  #     expectedStatusCodes: [200]
+  #     maxRedirects: 0
+  #   - name: registry
+  #     url: https://registry.cocreiamo.com/v2/
+  #     expectedStatusCodes: [401]
+  #     maxRedirects: 0
+  #   - name: faro
+  #     url: https://faro.cocreiamo.com/collect
+  #     expectedStatusCodes: [404, 405]
+  #     maxRedirects: 0
+  - name: monitoring
+    url: https://monitoring.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: deploy
+    url: https://deploy.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: portal
+    url: https://portal.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: home
+    url: https://home.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: images
+    url: https://images.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: network
+    url: https://network.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: releases
+    url: https://releases.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: runbooks
+    url: https://runbooks.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: policies
+    url: https://policies.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: storage
+    url: https://storage.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: costs
+    url: https://costs.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: errors
+    url: https://errors.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
+  - name: analytics
+    url: https://analytics.cocreiamo.com
+    expectedStatusCodes: [302]
+    maxRedirects: 0
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.cloud.cocreiamo.com
+  name: cocreiamo status
+  introTitle: "**cocreiamo** platform status"
+  introMessage: Public names probed from GitHub Actions, outside the datacenter.
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+notifications: []
