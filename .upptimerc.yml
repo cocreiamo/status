@@ -2,22 +2,23 @@ owner: cocreiamo
 repo: status
 
 sites:
-  - name: hello
-    url: https://hello.cocreiamo.com
-    expectedStatusCodes: [200, 404]
-    maxRedirects: 0
-  - name: id
-    url: https://id.cocreiamo.com/robots.txt
-    expectedStatusCodes: [200]
-    maxRedirects: 0
-  - name: registry
-    url: https://registry.cocreiamo.com/v2/
-    expectedStatusCodes: [401]
-    maxRedirects: 0
-  - name: faro
-    url: https://faro.cocreiamo.com/collect
-    expectedStatusCodes: [404, 405]
-    maxRedirects: 0
+  # To add when deployed (they answer 530 or nothing until the app or the registry runs):
+  #   - name: hello
+  #     url: https://hello.cocreiamo.com
+  #     expectedStatusCodes: [200, 404]
+  #     maxRedirects: 0
+  #   - name: id
+  #     url: https://id.cocreiamo.com/robots.txt
+  #     expectedStatusCodes: [200]
+  #     maxRedirects: 0
+  #   - name: registry
+  #     url: https://registry.cocreiamo.com/v2/
+  #     expectedStatusCodes: [401]
+  #     maxRedirects: 0
+  #   - name: faro
+  #     url: https://faro.cocreiamo.com/collect
+  #     expectedStatusCodes: [404, 405]
+  #     maxRedirects: 0
   - name: monitoring
     url: https://monitoring.cocreiamo.com
     expectedStatusCodes: [302]
